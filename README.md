@@ -1,2 +1,1 @@
-# mgbobster.gitbhub.io
-g
+when the imposter is sus
