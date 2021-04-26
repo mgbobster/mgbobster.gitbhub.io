@@ -1,0 +1,51 @@
+@font-face { font-family: cmtitle; src:url("fonts/cm-serif-bold.ttf"); }
+@font-face { font-family: cmserif; src:url("fonts/cm-serif.ttf"); }
+@font-face { font-family: cmmono; src:url("fonts/cm-monospace.ttf"); }
+
+
+/* body */
+
+body { background-color: #000; margin-left: 10%; margin-right: 10%; }
+
+h1 { color: #fff; font-family: cmtitle; font-size: 75px; margin-top: 5%; padding-top: 10px; }
+
+h2 { color: #fff; font-family: cmtitle; font-size: 25px; margin-bottom: -20px; }
+
+h3 { color: #fff; font-family: cmtitle; font-size: 20px; }
+
+p { color: #fff; font-family: cmserif; font-size: 20px; }
+
+footer { color: #222; font-family: cmmono; text-align: right; }
+
+
+/* lists */
+
+ul { color: #fff; list-style: none; font-family: cmmono; font-size: 18px; }
+ul li::before { content: "-"; font-weight: bold; display: inline-block; width: 1em; margin-left: -2em; }
+
+ol { color: #fff; font-family: cmserif; font-size: 18px; }
+
+
+/* links */
+
+a { color: #fff; text-decoration: underline;}
+a:hover { color: #198844; }
+	.menu { margin-top: 50px; padding: 5px; float: right;}
+	.recolor { filter: invert(100%); }
+	.recolor:hover { filter: invert(38%) sepia(93%) saturate(364%) hue-rotate(90deg) brightness(92%) contrast(98%); }
+
+
+/* tables */
+
+caption { color: #fff; font-family: cmtitle; font-size: 20px; text-decoration: underline; }
+th { color: #fff; font-family: cmserif; font-size: 20px; text-align: left; vertical-align: middle; text-decoration: underline; }
+td { color: #fff; font-family: cmserif; font-size: 20px; vertical-align: middle; padding: 3px; }
+
+
+/* misc */
+
+pre, code { color: #fff; font-family: cmmono; font-size: 18px; }
+
+sup { font-size: 10px; }
+
+.paper { color: #000; background-color: #eee; font-family: cmmono; font-size: 18px; width: 500px; text-align: left; margin:auto; padding: 2px; }
