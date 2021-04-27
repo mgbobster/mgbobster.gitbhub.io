@@ -5,15 +5,15 @@
 
 /* body */
 
-body { background-color: #dfff00; margin-left: 10%; margin-right: 10%; }
+body { background-color: #000000; margin-left: 10%; margin-right: 10%; }
 
-h1 { color: #ffe4c4; font-family: cmtitle; font-size: 75px; margin-top: 5%; padding-top: 10px; }
+h1 { color: #708090; font-family: cmtitle; font-size: 75px; margin-top: 5%; padding-top: 10px; }
 
-h2 { color: #ffe4c4; font-family: cmtitle; font-size: 25px; margin-bottom: -20px; }
+h2 { color: #708090; font-family: cmtitle; font-size: 25px; margin-bottom: -20px; }
 
-h3 { color: #ffe4c4; font-family: cmtitle; font-size: 20px; }
+h3 { color: #708090; font-family: cmtitle; font-size: 20px; }
 
-p { color: #ffe4c4; font-family: cmserif; font-size: 20px; }
+p { color: #708090; font-family: cmserif; font-size: 20px; }
 
 footer { color: #222; font-family: cmmono; text-align: right; }
 
