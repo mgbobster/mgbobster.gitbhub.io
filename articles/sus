@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>groff; part one</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="../style.css">
+		<link rel="icon" type="image/png" href="../pics/icon.png">
+	</head>
+
+	<body>
+		<div class="menu recolor"><a href="https://github.com/ayyekou"><img src="../pics/github-logo.svg"></img></a></div>
+		<div class="menu recolor"><a href="https://twitter.com/kayyeou"><img src="../pics/twitter-logo.svg"></img></a></div>
+		<div class="menu recolor"><a href="../index"><img src="../pics/home.svg"></img></a></div>
+
+		<h1>groff; part one</h1>
+		<p> This is an introduction to the groff typesetting system; derived from the original troff <sup>1</sup> and roff <sup>2</sup>, groff is the UNIX version (of roff) that is default installed on most linux systems. Similar to LaTeX, it doesn't require a graphical front-end and it converts text to a document file (usually pdf). While LaTeX is inarguably more robust than groff, there are some clear advantages to groff including simplicity and speed of use. In contrast to LaTeX, it is a lot more minimal, with compile speeds being a lot faster with the same document. Using the -ms macros, I have conducted a test comparing the speed of the compile times. This table shows the speed and document that they have compiled.</p>
+		
+		<br>
+
+		<table style="width: 20%; margin-left: auto; margin-right: auto;">
+			<caption>groff</caption>
+			<tr><th>test number:</th><th>speed:</th></tr>
+			<tr><td>one</td><td>0.30s</td></tr>
+			<tr><td>two</td><td>0.30s</td></tr>
+			<tr><td>three</td><td>0.32s</td></tr>
+			<tr><td>average</td><td>0.306s</td></tr>
+		</table>
+		
+		<br>
+		
+		<table style="width: 20%; margin-left: auto; margin-right: auto;">
+			<caption>LaTeX</caption>
+			<tr><th>test number:</th><th>speed:</th></tr>
+			<tr><td>one</td><td>0.64s</td></tr>
+			<tr><td>two</td><td>0.66s</td></tr>
+			<tr><td>three</td><td>0.62s</td></tr>
+			<tr><td>average</td><td>0.64s</td></tr>
+		</table>
+		
+		<br>
+		
+		<p>You can view the files that were compiled and their pdf documents here.</p>
+		<table style="width: 20%; margin-left: auto; margin-right: auto;">
+			<tr><th>plain text file</th><th>pdf document</th></tr>
+			<tr><td><a href="../misc/groff-vs-latex/test-1-groff.ms">groff</a></td><td><a href="../misc/groff-vs-latex/test-1-groff.pdf">groff</a></td><tr>
+			<tr><td><a href="../misc/groff-vs-latex/test-1-latex.tex">LaTeX</a></td><td><a href="../misc/groff-vs-latex/test-1-latex.pdf">LaTeX</a></td><tr>
+		</table>
+		
+		<p>As you can see here, the average time for the groff document to compile is nearly half the average time it takes for the LaTeX document to produce the exact (content) same document. In this test I made sure to include mathematics to demonstrate the similarity that (basic) LaTeX and groff have. While groff is a lot faster than LaTeX, it is almost too minimal to a point that it is hard to start using. While LaTeX uses packages such as <code>amsmath</code> or <code>mhchem</code>, groff uses preprocessors which are applied with the compilation command, some include <code>eqn</code> or <code>chem</code> (respective to the LaTeX packages). Groff is macro-based and uses different macro packages for different uses. I personally use -ms macros simply because it is the first I used. Other popular macro packages include -mom and -man. In addition to this post, I will also be writing two more groff tutorials pertaining to basics and advanced groff.</p>
+
+		<h2>sources:</h2>
+		<ol>
+			<li><a href="https://wikipedia.com/wiki/troff">troff</a></li>
+			<li><a href="https://wikipedia.com/wiki/roff_(software)">roff</a></li>
+		</ol>
+		<footer>
+			ayyekou
+		</footer>
